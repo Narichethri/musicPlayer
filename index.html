@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Online Music Player</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+  <section class="split left">
+    <div class="details">
+      <div class="name">
+        <h3>Music Player🎵 </h3>
+      </div>
+      <img class="displayimage" src="displayimage.png" alt="image">
+      <input type="range" id="progress-bar" min="0" max="100" value="0">
+      <div class="buttons">
+        <div class="prev-track" onclick="prevTrack()">
+          <i class="fa fa-backward fa-2x"></i>
+        </div>
+        <div class="pause-track" onclick="pauseTrack()">
+          <i class="fa fa-pause fa-2x"></i>
+        </div>
+        <div class="play-track" onclick="playTrack(0)">
+          <i class="fa fa-play fa-2x"></i>
+        </div>
+        <div class="next-track" onclick="nextTrack()">
+          <i class="fa fa-forward fa-2x"></i>
+        </div>
+        
+        
+      </div>
+    </div>
+
+  </section>
+  <section class="split right">
+    <h3 class="title">Music  Playlist</h3>
+    <div class="displaytitle">
+    <b>Playing Now :</b>
+    <i id="songdisplay">Currently no song playing.</i>
+  </div>
+    
+    <div class="songs-list">
+      <ul id="songslist">
+
+      </ul>
+    </div>
+
+
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
